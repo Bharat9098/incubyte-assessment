@@ -1,5 +1,5 @@
 class StringCalculator
-  def self.sayHello
-    "Hello Bharat Khatoliya"
+  def self.add(numbers)
+    return  0 if numbers.strip.empty?
   end
 end
