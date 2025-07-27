@@ -20,3 +20,10 @@ class StringCalculator
     numbers.sum
   end
 end
+
+puts StringCalculator.add("")
+puts StringCalculator.add("1")
+puts StringCalculator.add("1, 5")
+puts StringCalculator.add("//;\n1;2")
+puts StringCalculator.add("1, -2, 3")
+puts StringCalculator.add("1, -2, -5, 3")
