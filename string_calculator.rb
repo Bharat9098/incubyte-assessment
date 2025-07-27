@@ -1,7 +1,11 @@
-class StringCalculator
-  def self.add(numbers)
-    return  0 if numbers.strip.empty?
+# string_calculator.rb
 
-    numbers.split(",").map(&:to_i).sum
+class StringCalculator
+  def self.add(input)
+    return 0 if input.strip.empty?
+
+    numbers = []
+    numbers = input.split(/,|\n/).map(&:to_i)
+    numbers.sum
   end
 end
